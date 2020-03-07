@@ -4,7 +4,9 @@ const typeDefs = gql`
   type Query {
     greetings: [String]
     tasks: [Task!]
+    task(id: ID!): Task
     users: [User!]
+    user(id: ID!): User
   }
 
   type User {
